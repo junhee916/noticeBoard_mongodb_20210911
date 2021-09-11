@@ -41,6 +41,7 @@ app.use(morgan('dev'))
 // connected uploads
 app.use('/uploads', express.static('uploads'))
 app.use('/scripts', express.static('scripts'))
+app.use('/public', express.static('public'))
 
 // connected routes
 app.use('/user', userRouter)
