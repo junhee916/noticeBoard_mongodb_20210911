@@ -23,6 +23,11 @@ app.get('/signup', (req, res) => {
     res.render('signup')
 })
 
+app.get('/board', (req, res) => {
+
+    res.render('board')
+})
+
 // connected mongodb...
 const connectDB = require('./config/database')
 connectDB()
